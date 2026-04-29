@@ -1,0 +1,55 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="baku"
+run/main_scene="uid://b8qvpomrqddqr"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="viewport"
+
+[dotnet]
+
+project/assembly_name="baku"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/TileMapDual/plugin.cfg")
+
+[global_group]
+
+ground=""
+area=""
+
+[input]
+
+all={
+"deadzone": 0.5,
+"events": []
+}
+
+[layer_names]
+
+2d_physics/layer_1="Character"
+2d_physics/layer_2="Item"
+2d_physics/layer_3="CharacterTerrain"
+2d_physics/layer_4="ItemTerrain"
+2d_physics/layer_5="CharacterScaffold"
+2d_physics/layer_6="ItemScaffold"
+2d_physics/layer_7="AttributeArea"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
